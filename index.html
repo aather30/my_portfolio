@@ -670,6 +670,46 @@
       background: rgba(139,92,246,.14);
       transform: translateY(-2px);
     }
+    .values-section {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid var(--border);
+    }
+    .values-title {
+      font-size: .72rem;
+      font-family: var(--mono);
+      color: var(--blue-light);
+      text-transform: uppercase;
+      letter-spacing: .12em;
+      font-weight: 600;
+      margin-bottom: 14px;
+    }
+    .values-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+    .value-card {
+      background: rgba(255,255,255,.025);
+      border: 1px solid var(--border);
+      border-left: 3px solid var(--blue);
+      border-radius: var(--r);
+      padding: 14px 16px;
+      transition: background .2s var(--ease);
+    }
+    .value-card:hover { background: rgba(255,255,255,.05); }
+    .value-card-full { grid-column: 1 / -1; }
+    .value-name {
+      font-size: .85rem;
+      font-weight: 700;
+      color: var(--text);
+      margin-bottom: 5px;
+    }
+    .value-desc {
+      font-size: .8rem;
+      color: var(--muted);
+      line-height: 1.55;
+    }
 
     /* ════════════════════════════════════════
        EXPERIENCE
@@ -1369,10 +1409,9 @@
         </p>
         <p>
           Over the past 5 years I have built production ML pipelines, LLM-powered agents, and data
-          systems at BMW, Walmart, and VISABLE, alongside 150+ client projects delivered on Fiverr
-          and Upwork. The work ranges from forecasting models that lifted sales by <strong>17%</strong>
-          to AI agents that replaced entire manual workflows, always sitting at the intersection of
-          machine learning, generative AI, and scalable software engineering.
+          systems at BMW, Walmart, and VISABLE, alongside 150+ client projects on Fiverr and Upwork.
+          The work ranges from forecasting models that lifted sales by <strong>17%</strong> to AI
+          agents that replaced entire manual workflows, and I genuinely enjoy both ends of that spectrum.
         </p>
         <p>
           Most recently at <strong>BMW Financial Services</strong>, I built AI agents on MCP servers
@@ -1383,10 +1422,9 @@
           boosted filtered output by <strong>40%</strong>.
         </p>
         <p>
-          My experience covers the full stack of applied AI: time series forecasting, NLP, RAG
-          pipelines, vector databases, prompt engineering, computer vision, and end-to-end MLOps on
-          GCP, AWS, Airflow, and Kubernetes. The focus is always on systems that teams trust and
-          businesses actually depend on.
+          My experience covers the full stack of applied AI, from time series forecasting and NLP to
+          RAG pipelines, computer vision, and end-to-end MLOps on GCP, AWS, and Kubernetes. What I
+          care about most is not the technology itself but what it makes possible for the people using it.
         </p>
         <div class="about-highlights">
           <span class="highlight-chip">🤖 AI Agents</span>
@@ -1396,6 +1434,32 @@
           <span class="highlight-chip">☁️ AWS · GCP</span>
           <span class="highlight-chip">👁️ Computer Vision</span>
           <span class="highlight-chip">🔧 MLOps</span>
+        </div>
+
+        <div class="values-section fade-up">
+          <div class="values-title">What I stand for</div>
+          <div class="values-grid">
+            <div class="value-card" style="border-left-color:var(--blue)">
+              <div class="value-name">🤝 Trust</div>
+              <div class="value-desc">I only ship work I would put my name on. If something is not ready, I say so clearly.</div>
+            </div>
+            <div class="value-card" style="border-left-color:var(--purple)">
+              <div class="value-name">🎯 Ownership</div>
+              <div class="value-desc">From raw data to deployed model, I treat the whole pipeline as my responsibility.</div>
+            </div>
+            <div class="value-card" style="border-left-color:var(--cyan)">
+              <div class="value-name">🔍 Curiosity</div>
+              <div class="value-desc">There is always a sharper approach somewhere. Finding it is the part I enjoy most.</div>
+            </div>
+            <div class="value-card" style="border-left-color:var(--green)">
+              <div class="value-name">📈 Impact</div>
+              <div class="value-desc">A model that does not move the needle is just an experiment. Real value is the only metric that matters.</div>
+            </div>
+            <div class="value-card value-card-full" style="border-left-color:var(--orange)">
+              <div class="value-name">💬 Clarity</div>
+              <div class="value-desc">I can explain what a model does to an engineer at 9am or to a CEO at 4pm. Both conversations matter.</div>
+            </div>
+          </div>
         </div>
 
         <div class="beyond-work fade-up">
